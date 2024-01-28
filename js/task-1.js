@@ -1,35 +1,12 @@
-const categories = document.getElementsByClassName('item');
+const categoriesEl = document.querySelector('#categories');
+const categoriesListItemEl = categoriesEl.querySelectorAll('.item');
 
-console.log(`Number of categories: ${categories.length}`);
+console.log(`Number of categories: ${categoriesListItemEl.length}`);
 
+categoriesListItemEl.forEach((item) => {
+  const titleElement = item.querySelector('h2').textContent;
+  const quantityElements = item.querySelectorAll('li').length;
 
-
-
-
-
-
-
-// const category = document.getElementsByTagName('h2');
-
-// console.log(category);
-
-
-
-// Number of categories: 3
-// Category: Animals
-// Elements: 4
-// Category: Products
-// Elements: 3
-// Category: Technologies
-// Elements: 5
-
-
-
-
-
-
-// const numbers = categories;
-
-// numbers.forEach(function(number) {
-//   console.log(number);
-// });
+  console.log(`Category: ${titleElement}`);
+  console.log(`Elements: ${quantityElements}`);
+});
