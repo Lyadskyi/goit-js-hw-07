@@ -230,15 +230,6 @@ p {
 
 /* ===== Task-6 ===== */
 
-.container-new {
-  background: #fff;
-  /* display: inline-flex; */
-  padding: 24px;
-  flex-direction: row;
-  gap: 16px;
-  border-radius: 8px;
-}
-
 #controls {
   background: #f6f6fe;
   display: flex;
